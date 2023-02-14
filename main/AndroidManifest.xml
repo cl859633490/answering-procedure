@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.titi">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 读取SD卡权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 网络状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 设备编号权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许在外部存储器即SD卡上写数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许在外部存储器即SD卡上读数据 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic"
+
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Titi"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label=" "
+            android:windowSoftInputMode="adjustPan|stateHidden"
+           >
+
+
+        </activity>
+
+        <activity android:name=".ui.notifications.setting"
+            android:exported="true"
+            android:label="             设置">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ques_makesi"></meta-data>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+
+        <activity android:name=".StartActivity"
+            android:exported="true"
+            android:label=" ">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter></activity>
+
+
+
+
+
+
+        <activity android:name=".ui.ques_makesi"
+            android:exported="true"
+            android:label="                 第一章">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"></meta-data></activity>
+
+        <activity android:name=".ui.QuestionActivity"
+            android:exported="true"
+            android:label="                 第一章">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"></meta-data></activity>
+
+        <activity android:name=".ui.notifications.exercise_record"
+            android:exported="true"
+            android:label="           ">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"></meta-data>
+        </activity>
+
+
+        <activity android:name=".User.login"
+            android:exported="true"
+            android:label="\t\t\t\t\t\t\t登录">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"></meta-data>
+        </activity>
+
+        <activity android:name=".User.RegisteredActivity"
+            android:exported="true"
+            android:label="\t\t\t\t\t\t\t        \t注册">
+
+        </activity>
+
+
+    </application>
+
+</manifest>

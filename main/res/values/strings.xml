@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UP</string>
+    <string name="title_home">搜索</string>
+    <string name="title_dashboard">题库</string>
+    <string name="title_notifications">设置</string>
+    <string name="logint">登陆界面 </string>
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <ScrollView
+        android:layout_width="413dp"
+        android:layout_height="403dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_dashboard"
+                android:layout_width="82dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="304dp"
+                android:layout_height="97dp"
+                android:background="@drawable/background2"
+                android:text="马克思主义基本原理概论"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.934"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.039" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="79dp"
+                android:layout_height="99dp"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/dd"
+                app:layout_constraintBottom_toBottomOf="@+id/button4"
+                app:layout_constraintEnd_toStartOf="@+id/button4"
+                app:layout_constraintStart_toStartOf="@+id/imageButton2"
+                app:layout_constraintTop_toTopOf="@+id/button4"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="304dp"
+                android:layout_height="97dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/background3"
+                android:text="思想道德与法制"
+                app:layout_constraintEnd_toEndOf="@+id/button4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button4"
+                app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="304dp"
+                android:layout_height="97dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/background1"
+                android:text="中国特色社会主义概论体系"
+                app:layout_constraintEnd_toEndOf="@+id/button5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button5"
+                app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="304dp"
+                android:layout_height="97dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/background1"
+                android:text="中国近代史纲要"
+                app:layout_constraintEnd_toEndOf="@+id/button6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button6"
+                app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="79dp"
+                android:layout_height="99dp"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ee"
+                app:layout_constraintBottom_toBottomOf="@+id/button5"
+                app:layout_constraintEnd_toStartOf="@+id/button5"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="@+id/button5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="79dp"
+                android:layout_height="99dp"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/tt"
+                app:layout_constraintBottom_toBottomOf="@+id/button6"
+                app:layout_constraintEnd_toStartOf="@+id/button6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button6"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="79dp"
+                android:layout_height="99dp"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/uu"
+                app:layout_constraintBottom_toBottomOf="@+id/button7"
+                app:layout_constraintEnd_toStartOf="@+id/button7"
+                app:layout_constraintStart_toStartOf="@+id/imageButton2"
+                app:layout_constraintTop_toTopOf="@+id/button7"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="305dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="132dp"
+        android:text="Tips:可点击选择上面题库进行答题"
+        android:textColor="#F63E04"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/imageButton5"
+        android:layout_width="157dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/background2"
+        android:text="我的\n错题"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
